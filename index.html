@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+	      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+        <link rel="stylesheet" href="monopoly.css">
+	      <script src="ang.js"></script>
+    </head>
+    <body ng-app="monopolyApp">
+
+      <div id="monopolyBoard" ng-controller="monopolyCtrl">
+        <div class="space {{ space.type }}" ng-repeat="space in spaces">
+          <div class="house-container" style="background: {{space.color}}">
+          </div>
+          <div class="space-name">
+            {{ space.name }}
+          </div>
+          <div class="space-price">
+            {{ space.price | nfcurrency }}
+          </div>
+        </div>
+      </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    </body>
+</html>

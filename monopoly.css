@@ -1,0 +1,32 @@
+#monopolyBoard {
+  font-family: 'Nunito', sans-serif;
+  font-size:10px;
+  background:#E4FAE3;
+}
+.space {
+  box-sizing:border-box;
+  width:20%;
+  display:inline-block;
+  vertical-align:top;
+  border:1px solid #000;
+  position:relative;
+  height:150px;
+  width:115px
+}
+.property .house-container {
+  height:30px;
+  border-bottom:1px solid #000;
+}
+.space-name {
+  padding-top:20px;
+  text-transform:uppercase;
+  text-align:center;
+  max-width:75px;
+  margin:0 auto;
+  font-weight:bold;
+}
+.property .space-price, .railroad .space-price, .utility .space-price {
+  position:absolute;
+  bottom:30px;
+  left:43%;
+}
